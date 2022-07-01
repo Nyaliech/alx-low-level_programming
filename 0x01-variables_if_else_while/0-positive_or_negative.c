@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-#include <stdio>
+#include <stdio.h>
 
 /**
  * main - Assign a rnadom number to the variables n each time
