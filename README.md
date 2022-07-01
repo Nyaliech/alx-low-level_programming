@@ -1,1 +1,1 @@
-This is the ALX Low Level Programming Repository
+This is 0x01. C - Variables, if, else, while Readme
