@@ -1,16 +1,16 @@
 #include <stdio.h>
 
 /**
- * main - prints all single digit numbers of base 10 starting from 0
+ * main - prints the lowercase alphabetin reverse
  * followed by a new line
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int ch;
+	char ch;
 
-	for (ch = 48; ch <= 57; ch++)
+	for (ch = 'z'; ch >= 'a'; ch--)
 	{
 		putchar(ch);
 	}
