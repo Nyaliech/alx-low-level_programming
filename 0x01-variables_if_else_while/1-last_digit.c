@@ -6,6 +6,7 @@
  * main - assign a random number to the variable n
  * each time it is executed
  * print the last digit of the number stored in the variable n
+ * Results: ALways 0 (Success)
  */
 int main(void)
 {
@@ -23,11 +24,11 @@ if (m > 5)
 }
 if (m == 0)
 {
-printf("0");
+printf("and is 0");
 }
 if (m < 6 &&  m != 0)
 {
-	printf("and is less than 6 not 0");
+	printf("and is less than 6 and not 0");
 }
 	printf("\n");
 
