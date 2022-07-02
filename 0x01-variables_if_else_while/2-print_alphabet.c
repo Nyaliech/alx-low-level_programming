@@ -12,7 +12,7 @@ int main(void)
 	{
 		putchar(ch);
 	}
-	putchar("\n");
+	putchar(10); /*10 is an ASCII code for new line*/
 	
 	return (0);
 }
