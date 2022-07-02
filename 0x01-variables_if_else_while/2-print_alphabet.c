@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-/** main -prints the alphabet in lowercase
+/**
+ * main - prints the alphabet in lowercase
  * followed by a new line
  * Return: Always 0 (Success)
  */
@@ -12,7 +13,7 @@ int main(void)
 	{
 		putchar(ch);
 	}
-	putchar(10); /*10 is an ASCII code for new line*/
+	putchar(10); /*this is an ASCII code for new line*/
 	
 	return (0);
 }
