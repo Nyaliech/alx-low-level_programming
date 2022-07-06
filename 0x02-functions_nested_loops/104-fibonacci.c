@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define LARGEST 1000000000
 /**
  * main - finds and prints the first 98 Fibonacci numberst
  * starting with 1 and 2
@@ -7,31 +8,31 @@
  */
 int main(void)
 {
-	unsigned long int a, b, c, d, e, f, g;
+	unsigned long int a = 0, b = 1, c = 0, d = 2;
+	unsigned long int e, f, g;
+	int kwan;
 
-	b = 1;
-	c = 2;
-
-	printf("%lu", b);
-	for (a = 1; a < 91; a++)
+	printf("%lu, %lu, ", b, d);
+	for (kwan = 2; kwan < 98; kwan++)
 	{
-		printf(", %lu", c);
-		c = c + b;
-		b = c - b;
-	}
-	d = b / 1000000000;
-	e = b % 1000000000;
-	f = c / 1000000000;
-	g = c % 1000000000;
-	for (a = 92; a < 99; ++a)
-	{
-		printf(", %lu") f, + (g / 1000000000);
-		printf("%lu"); g % 1000000000);
-		f = f + e;
-		d = f - d;
-		g = g + e;
-		e = g - e;
-	}
-	printf("\n");
-	return (0);
-}
+		if (b + d > LARGEST || c > 0 || a > 0)
+		{
+			e = (b + d) / LARGEST;
+			f = (b + d) % LARGEST;
+			g = a + c + e;
+			a = c, c = g;
+			b = d, d = f;
+			printf("%lu%010lu", c, d;
+					}
+					else
+					{
+					f = b + d;
+					b = d, d = f;
+					printf("%lu", d);
+					}
+					if  (count != 97)
+					printf(", ");
+					}
+					printf("\n");
+					return (0);
+					}
