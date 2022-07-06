@@ -1,38 +1,49 @@
 #include <stdio.h>
-#define LARGEST 1000000000
+
 /**
- * main - finds and prints the first 98 Fibonacci numberst
- * starting with 1 and 2
- * followed by a new line
- * Return: Always0 (Success)
+ * main - prints the first 98 Fibonnacci numbers
+ *
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	unsigned long int a = 0, b = 1, c = 0, d = 2;
-	unsigned long int e, f, g;
-	int kwan;
+	int x, hold, hold2;
+	long int a, b, c, d, e, f;
 
-	printf("%lu, %lu, ", b, d);
-	for (kwan = 1; kwan <= 97; kwan++)
+	a = 1;
+	b = 2;
+	hold = hold2 = 1;
+	printf("%ld, %ld", a, b);
+	for (x = 0; x < 96; x++)
 	{
-		if (b + d > LARGEST || c > 0 || a > 0)
+		if (hold)
+			c = a + b;
+		printf(", %ld", c);
+		a = b;
+		b = c;
+	}
+	else
+	{
+		if (hold2)
 		{
-			e = (b + d) / LARGEST;
-			f = (b + d) % LARGEST;
-			g = a + c + e;
-			a = c, c = g;
-			b = d, d = f;
-			printf("%lu%010lu", c, d);
-					}
-					else
-					{
-					f = b + d;
-					b = d, d = f;
-					printf("%lu", d);
-					}
-					if  (kwan != 97)
-					printf(", ");
-					}
-					printf("\n");
-					return (0);
-					}
+			e = a % 1000000000;
+			f = b % 1000000000;
+			a = a / 1000000000;
+			b = b / 1000000000;
+			hold2 = 0;
+		}
+		d = (e + f);
+		d = a + b + (d / 1000000000);
+		printf(", %ld", c);
+		printf("%ld", d % 1000000000);
+		a = b;
+		e = f;
+		b = c;
+		f = (d % 1000000000;
+				}
+				if (((a + b) < 0) && hold == 1)
+				hold = 0;
+				}
+				printf("\n");
+				return (0);
+				}
