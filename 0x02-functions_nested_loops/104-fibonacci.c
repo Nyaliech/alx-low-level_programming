@@ -22,7 +22,7 @@ int main(void)
 			g = a + c + e;
 			a = c, c = g;
 			b = d, d = f;
-			printf("%lu%010lu", c, d;
+			printf("%lu%010lu", c, d);
 					}
 					else
 					{
@@ -30,7 +30,7 @@ int main(void)
 					b = d, d = f;
 					printf("%lu", d);
 					}
-					if  (count != 97)
+					if  (kwan != 97)
 					printf(", ");
 					}
 					printf("\n");
