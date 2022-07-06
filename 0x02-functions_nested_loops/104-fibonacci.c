@@ -14,7 +14,7 @@ int main(void)
 	b = 2;
 	hold = hold2 = 1;
 	printf("%ld, %ld", a, b);
-	for (x = 0; x < 96; x++)
+	for (x = 1; x =< 98; x++)
 	{
 		if (hold)
 		{
