@@ -30,7 +30,7 @@ int main(void)
 					b = d, d = f;
 					printf("%lu", d);
 					}
-					if  (kwan != 98)
+					if  (kwan != 97)
 					printf(", ");
 					}
 					printf("\n");
