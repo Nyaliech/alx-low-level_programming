@@ -19,6 +19,10 @@ int main(void)
 		{
 			h = h + e;
 		}
-		printf("%lu\n", sum);
+		g = e + f;
+		e = f;
+		f = g;
+	}
+		printf("%lu\n", h);
 		return (0);
 	}
