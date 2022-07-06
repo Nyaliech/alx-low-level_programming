@@ -13,7 +13,7 @@ int main(void)
 	int kwan;
 
 	printf("%lu, %lu, ", b, d);
-	for (kwan = 1; kwan <=98; kwan++)
+	for (kwan = 1; kwan <= 97; kwan++)
 	{
 		if (b + d > LARGEST || c > 0 || a > 0)
 		{
@@ -30,7 +30,7 @@ int main(void)
 					b = d, d = f;
 					printf("%lu", d);
 					}
-					if  (kwan != 98)
+					if  (kwan != 97)
 					printf(", ");
 					}
 					printf("\n");
