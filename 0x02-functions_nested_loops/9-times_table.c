@@ -1,33 +1,64 @@
 #include "main.h"
 /**
- * times_table -prints the 9 imes table starting woth 0
+ * times_table - prints the 9 times table
+ * Return: times table
  */
 void times_table(void)
-{
-	int x, y, k;
 
-	for (x = 0; x < 10; y++)
+{
+
+	int rone, cone, d;
+
+
+
+	for (rone = 0; rone <= 9; rone++)
+
 	{
-		for (y = 0; y < 10; y++)
+
+		_putchar('0');
+
+		_putchar(',');
+
+		_putchar(' ');
+
+		for (cone = 1; cone <= 9; cone++)
+
 		{
-			k = x * y;
-			if (y == 0)
-				_putchar(k + '0');
-			if (y != 0 && k < 10)
+
+			d = (rone * cone);
+
+			if ((d / 10) > 0)
+
 			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(k + '0');
+
+				_putchar((d / 10) + '0');
+
 			}
-			else if (k >= 10)
+
+			else
+
 			{
-				_putchar(',');
+
 				_putchar(' ');
-				_putchar((k / 10) + '0');
-				_putchar((k % 10) + '0');
+
 			}
+
+			_putchar((d % 10) + '0');
+
+			if (cone < 9)
+
+			{
+
+				_putchar(',');
+
+				_putchar(' ');
+
+			}
+
 		}
+
 		_putchar('\n');
+
 	}
+
 }
