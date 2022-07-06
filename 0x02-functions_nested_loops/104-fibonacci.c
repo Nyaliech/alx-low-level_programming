@@ -17,6 +17,7 @@ int main(void)
 	for (x = 0; x < 96; x++)
 	{
 		if (hold)
+		{
 			c = a + b;
 		printf(", %ld", c);
 		a = b;
@@ -39,7 +40,7 @@ int main(void)
 		a = b;
 		e = f;
 		b = c;
-		f = (d % 1000000000;
+		f = (d % 1000000000);
 				}
 				if (((a + b) < 0) && hold == 1)
 				hold = 0;
