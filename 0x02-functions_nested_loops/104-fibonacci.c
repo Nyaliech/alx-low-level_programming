@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-	unsigned long int a = 0, b = 1, c;
+	unsigned long int a = 1, b = 2, c;
 	int x;
 
-	for (x = 2; x <= 98; x++)
+	for (x = 2; x < 98; x++)
 {
 	c = a + b;
 	if (x != 98)
