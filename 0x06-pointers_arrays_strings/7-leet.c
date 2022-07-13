@@ -18,7 +18,7 @@ char *leet(char *a)
 	{
 		for (b = 0; b < 5; b++)
 		{
-			if (*(a + kwan) == low_letters[a] || *(a + kwan) == upp_letters[b])
+			if (*(a + kwan) == low_letters[b] || *(a + kwan) == upp_letters[b])
 			{
 				*(a + kwan) = numbers[b];
 				break;
