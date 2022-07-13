@@ -14,13 +14,13 @@ char *_strcat(char *dest, char *src)
 	{
 		kwan++;
 	}
-	while (kwan2 >= 0)
+	while (kwan1 >= 0)
 	{
-		*(dest + kwan) = *(src + kwan2);
-		if (*(src + kwan2) == '\0')
+		*(dest + kwan) = *(src + kwan1);
+		if (*(src + kwan1) == '\0')
 			break;
 		kwan++;
-		kwan2++;
+		kwan1++;
 	}
 	return (dest);
 }
