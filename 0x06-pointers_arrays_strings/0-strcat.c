@@ -15,12 +15,12 @@ char *_strcat(char *dest, char *src)
 		kwan++;
 	}
 	while (kwan2 >= 0)
-		{
-			*(dest + kwan) = *(src + kwan2);
-			if (*(src + kwan2) == '\0')
-				break;
-			kwan++;
-			kwan2++;
-		}
+	{
+		*(dest + kwan) = *(src + kwan2);
+		if (*(src + kwan2) == '\0')
+			break;
+		kwan++;
+		kwan2++;
+	}
 	return (dest);
 }
