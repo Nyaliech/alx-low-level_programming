@@ -14,8 +14,9 @@ int _atoi(char *s)
 	while (*(s + kwan) != '\0')
 	{
 		if (kiasi > 0 && (*(s + kwan) < '0' || *(s + kwan) > '9'))
+		{
 				break;
-
+	}
 				if (*(s + kwan) == '-')
 				b *= -1;
 				if ((*(s + kwan) >= '0') && (*(s + kwan) <= '9'))
@@ -28,7 +29,7 @@ int _atoi(char *s)
 				}
 				for (d = kwan - kiasi; d < kwan; d++)
 				{
-				a = a + ((*(S + d) - 48) * c);
+				a = a + ((*(s + d) - 48) * c);
 				c /= 10;
 				}
 				return (a * b);
