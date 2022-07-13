@@ -6,21 +6,29 @@
  * main - generates keygen
  * Return: 0 Always
  */
-int main(void)
+#include <math.h>
+
+#include <stdio.h>
+
+#include <stdlib.h>
+
+#include <time.h>
+
+  
+void randomPasswordGeneration(int N)
 {
-	int a = 0, b = 0;
+	int i = 0;
+	int randomizer = 0;
+	srand((unsigned int)(time(NULL)));
+	char numbers[] = "0123456789";
+	char letter[] = "abcdefghijklmnoqprstuvwyzx";
+	char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
+	char symbols[] = "!@#$^&*?";
+	char password[N];
+	randomizer = rand() % 4;
 
-	time_t t;
-
-	srand((unsigned int) time(&t));
-	while (b < 2772)
+	for (i = 0; i < N; i++)
 	{
-		a = rand() % 128;
-		if ((b + a) > 2772)
-			break;
-		b = b + a;
-		printf("%b", a);
-	}
-	printf("%b\n", (2772 - b));
-	return (0);
-}
+		 if (randomizer == 1)
+		 {
+			 password[i] = numbers[rand() % 10];
