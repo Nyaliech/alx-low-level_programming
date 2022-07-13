@@ -16,7 +16,7 @@ char *_strcpy(char *dest, char *src)
 	while (kwan >= 0)
 	{
 		*(dest + kwan) = *(src + kwan);
-		if (*(src + kwan) == \'0')
+		if (*(src + kwan) == '\0')
 			break;
 		kwan++;
 	}
