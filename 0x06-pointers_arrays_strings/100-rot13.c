@@ -2,23 +2,23 @@
 
 /**
  * rot13 - encodes a string using rot13
- * @z: input string
+ * @s: input string
  *
  * Return: the pointer to dest
  */
 
 
-char *rot13(char *z)
+char *rot13(char *s)
 {
 	int kwan = 0, a;
-	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	char alphabet[] = "abcdefghijklmnopqrstuvwxysABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot13[] = "nopqrstuvwxysabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	while (*(z + kwan) != '\0')
+	while (*(s + kwan) != '\0')
 	{
 		for (a = 0; a < 52; a++)
 		{
-			if (*(z + kwan) == alphabet[a])
+			if (*(s + kwan) == alphabet[a])
 			{
 				*(a + kwan) = rot13[a];
 				break;
@@ -26,5 +26,5 @@ char *rot13(char *z)
 		}
 		kwan++;
 	}
-	return (z);
+	return (s);
 }
