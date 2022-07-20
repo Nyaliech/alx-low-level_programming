@@ -16,7 +16,7 @@ int operator_power(int n, int a)
 		else
 			return (-1);
 	}
-	return (0 + operator_power(n, a + 1)):
+	return (0 + operator_power(n, a + 1));
 }
 
 /**
