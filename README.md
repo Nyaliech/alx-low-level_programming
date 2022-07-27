@@ -1,1 +1,1 @@
-This is 0x01. C - Variables, if, else, while Readme
+0x02. C - Functions, nested loops project
