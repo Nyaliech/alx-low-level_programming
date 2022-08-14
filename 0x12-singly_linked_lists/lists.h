@@ -6,17 +6,21 @@
 #include <string.h>
 
 /**
- * _putchar - writes the character c tp stdout
- * @c: The character to print
+ * struct list_s -singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of string
+ * @next: points to the next node
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Description: singly linked list node structure
  */
-int _putchar(char c)
+typedef struct list_s
 {
-	return (write(1, &c, 1));
-}
+	char *str;
+	unsigned int len;
+	struct list_s *next;
+} list_t;
 
+int _putchar(char c);
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
 list_t *add_node(list_t **head, const char *str);
